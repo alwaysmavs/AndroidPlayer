@@ -1,10 +1,18 @@
 ## 历史更新记录
 
-* 1.3.2 ([Release Notes][14])
+* 1.4.0 ([Release Notes](https://github.com/pili-engineering/PLDroidPlayer/blob/master/ReleaseNotes/release-notes-1.4.0.md))
+  - 发布 pldroid-player-1.4.0.jar
+  - 更新 libpldroidplayer.so
+  - 新增设置封面功能
+  - 新增获取当前播放状态接口
+  - 修复了多次打开、关闭播放器出现 ANR 的问题
+  - 修复了播放地址含有多个 domain 时解析异常的问题
+
+* 1.3.2 ([Release Notes](https://github.com/pili-engineering/PLDroidPlayer/blob/master/ReleaseNotes/release-notes-1.3.2.md))
   - 发布 pldroid-player-1.3.2.jar
   - 修复了部分场景下直接使用 PLMediaPlayer 播放出现的崩溃问题
 
-* 1.3.1 ([Release Notes][13])
+* 1.3.1 ([Release Notes](https://github.com/pili-engineering/PLDroidPlayer/blob/master/ReleaseNotes/release-notes-1.3.1.md))
   - 发布 pldroid-player-1.3.1.jar
   - 更新 libpldroidplayer.so
   - 添加了 QoS 功能
@@ -15,7 +23,7 @@
   - 修复了 x86_64 架构下找不到动态库导致的崩溃问题
   - 更新了 demo 代码，演示了如何进行重连
 
-* 1.3.0 ([Release Notes][12])
+* 1.3.0 ([Release Notes](https://github.com/pili-engineering/PLDroidPlayer/blob/master/ReleaseNotes/release-notes-1.3.0.md))
   - 发布 pldroid-player-1.3.0.jar
   - 更新 libpldroidplayer.so
   - 优化直播累积延时
@@ -31,7 +39,7 @@
   - 修复点播缓冲过程中，断网操作导致长时间无法恢复的问题
   - 修复特殊网络情况下，退出播放器时的 ANR 问题
 
-* 1.2.3 ([Release Notes][11])
+* 1.2.3 ([Release Notes](https://github.com/pili-engineering/PLDroidPlayer/blob/master/ReleaseNotes/release-notes-1.2.3.md))
   - 发布 pldroid-player-1.2.3.jar
   - 更新 libpldroidplayer.so
   - 支持后台播放
@@ -45,18 +53,18 @@
   - 解决从后台切换回来后，播放从头开始加载的问题
   - 修复`AudioManager`可能导致的内存泄漏问题
 
-* 1.2.2 ([Release Notes][10])
+* 1.2.2 ([Release Notes](https://github.com/pili-engineering/PLDroidPlayer/blob/master/ReleaseNotes/release-notes-1.2.2.md))
   - 发布 pldroid-player-1.2.2.jar
   - `AVOptions` 新增 `KEY_START_ON_PREPARED` 参数，便于配置是否自动开始播放
   - `PLVideoTextureView` 新增 `setMirror` 接口，可实现画面镜像变换
   - 新增 `setVolume` 接口，可实现播放器音量的设置，或静音功能
 
-* 1.2.1 ([Release Notes][9])
+* 1.2.1 ([Release Notes](https://github.com/pili-engineering/PLDroidPlayer/blob/master/ReleaseNotes/release-notes-1.2.1.md))
   - 发布 pldroid-player-1.2.1.jar
   - 恢复 `SharedLibraryNameHelper.renameSharedLibrary` 接口
   - 恢复 `SharedLibraryNameHelper.getSharedLibraryName` 接口
 
-* 1.2.0 ([Release Notes][8])
+* 1.2.0 ([Release Notes](https://github.com/pili-engineering/PLDroidPlayer/blob/master/ReleaseNotes/release-notes-1.2.0.md))
   - 发布 pldroid-player-1.2.0.jar
   - 删除了 ijkmediaplayer.jar
   - 实现播放器秒开优化，网络条件好的情况下，可以实现秒开
@@ -67,7 +75,7 @@
   - 支持画面旋转（0度，90度，180度，270度）
   - 更新 Demo 程序，演示所有新增的接口类
 
-* 1.1.4 ([Release Notes][7])
+* 1.1.4 ([Release Notes](https://github.com/pili-engineering/PLDroidPlayer/blob/master/ReleaseNotes/release-notes-1.1.6.md))
   - 发布 pldroid-player-1.1.4.jar
   - 更新 libpldroidplayer.so
   - 新增播放器全屏播放支持
@@ -75,7 +83,7 @@
   - 修复播放过程中，概率性异常地回调 `onCompletion` 问题
   - `VideoView` 布局的展示代码
 
-* 1.1.3 ([Release Notes][6])
+* 1.1.3 ([Release Notes](https://github.com/pili-engineering/PLDroidPlayer/blob/master/ReleaseNotes/release-notes-1.1.4.md))
   - 发布 pldroid-player-1.1.3.jar
   - 更新 libpldroidplayer.so
   - 新增 ARM, X86 支持
@@ -84,13 +92,13 @@
   - 修复播放过程中，概率性不间断地回调 onCompletion 问题
   - 更新不同播放方式（直播或点播）设置 option 的展示代码
 
-* 1.1.2 ([Release Notes][5])
+* 1.1.2 ([Release Notes](https://github.com/pili-engineering/PLDroidPlayer/blob/master/ReleaseNotes/release-notes-1.1.3.md))
   - 发布 pldroid-player-1.1.2.jar
   - 更新 arm64-v8a/libpldroidplayer.so，armeabi-v7a/libpldroidplayer.so
   - 修复推流端断流后，Player 概率性地无 `onCompletion` 回调通知
   - 修复 `AVOptions` 的 key 没有设置 value 时候的 Crash 问题
 
-* 1.1.1 ([Release Notes][4])
+* 1.1.1 ([Release Notes](https://github.com/pili-engineering/PLDroidPlayer/blob/master/ReleaseNotes/release-notes-1.1.2.md))
   - 发布 pldroid-player-1.1.1.jar
   - 发布 arm64-v8a/libpldroidplayer.so，增加 ARM64v8a 支持
   - 更新 ARMv7a 版本的 libpldroidplayer.so
@@ -105,7 +113,7 @@
   - 废除 `setBufferTime(float ms)` 接口，使用 `AVOptions` 代替
   - 增加 `AVOptions` 的演示代码
 
-* 1.1.0 ([Release Notes][3])
+* 1.1.0 ([Release Notes](https://github.com/pili-engineering/PLDroidPlayer/blob/master/ReleaseNotes/release-notes-1.1.1.md))
   - 发布 pldroid-player-1.1.0.jar
   - 更新 ijkmediaplayer.jar
   - 更新 libpldroidplayer.so
@@ -117,20 +125,6 @@
   - 修复部分机型硬解码异常问题
   - 添加纯音频播放展示界面
 
-* 1.0.0 ([Release Notes][2])
+* 1.0.0 ([Release Notes](https://github.com/pili-engineering/PLDroidPlayer/blob/master/ReleaseNotes/release-notes-1.1.0.md))
   - 发布 PLDroidPlayer v1.0.0
 
-[1]: https://github.com/pili-engineering/PLDroidPlayer/tree/master/PLDroidPlayerDemo
-[2]: https://github.com/pili-engineering/PLDroidPlayer/blob/master/ReleaseNotes/release-notes-1.0.0.md
-[3]: https://github.com/pili-engineering/PLDroidPlayer/blob/master/ReleaseNotes/release-notes-1.1.0.md
-[4]: https://github.com/pili-engineering/PLDroidPlayer/blob/master/ReleaseNotes/release-notes-1.1.1.md
-[5]: https://github.com/pili-engineering/PLDroidPlayer/blob/master/ReleaseNotes/release-notes-1.1.2.md
-[6]: https://github.com/pili-engineering/PLDroidPlayer/blob/master/ReleaseNotes/release-notes-1.1.3.md
-[7]: https://github.com/pili-engineering/PLDroidPlayer/blob/master/ReleaseNotes/release-notes-1.1.4.md
-[8]: https://github.com/pili-engineering/PLDroidPlayer/blob/master/ReleaseNotes/release-notes-1.2.0.md
-[9]: https://github.com/pili-engineering/PLDroidPlayer/blob/master/ReleaseNotes/release-notes-1.2.1.md
-[10]: https://github.com/pili-engineering/PLDroidPlayer/blob/master/ReleaseNotes/release-notes-1.2.2.md
-[11]: https://github.com/pili-engineering/PLDroidPlayer/blob/master/ReleaseNotes/release-notes-1.2.3.md
-[12]: https://github.com/pili-engineering/PLDroidPlayer/blob/master/ReleaseNotes/release-notes-1.3.0.md
-[13]: https://github.com/pili-engineering/PLDroidPlayer/blob/master/ReleaseNotes/release-notes-1.3.1.md
-[14]: https://github.com/pili-engineering/PLDroidPlayer/blob/master/ReleaseNotes/release-notes-1.3.2.md
